@@ -1,0 +1,29 @@
+### 시간복잡도 Time Complexity
+
+- 최상의 경우 : 오메가 표기법 (Big-Ω Notation)
+- 평균의 경우 : 세타 표기법 (Big-θ Notation)
+- 최악의 경우 : **빅오 표기법** (**Big-O** Notation)
+
+
+
+시간복잡도는 알고리즘이 대략 몇 개의 명령을 수행하는가 의미. 프로그램의 수행 시간을 유추할 수 있음 
+
+n개의 명령이 수행된다면 O(n) 으로 표기.
+
+0~n-1까지 더한 수 만큼 반복되므로 정확히는 ${n(n-1)/2}$ 이지만 최고차항만 남겨  $O(n^2)$ 으로 
+
+최고차항에 비하면 나머지항은 너무 작다. 가령 1000으로 $n^2$ 과 2n을 비교해보면 쉽게 이해될 것
+
+![그래프](https://blog.kakaocdn.net/dn/4NCdW/btrj2v2yYs6/t4KECyPLOMwqRW1tHlhB9K/img.png)
+
+**O(1) (Constant)**
+
+**O(log₂ n) (Logarithmic)  cf.**[https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/v/logarithms](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/v/logarithms)  log₂ 16 → log base 2 of 16 is equal to 4. **이진탐색, 데이터가 10배가 되면 처리시간은 2배가 되는 경우**
+
+**O(n) (Linear) 데이터 입력크기에 비례해 처리시간 증가. 데이터 10배가 되면 처리시간도 10배가 됨. 1차원 for문**
+
+**O(n log₂ n) (Linear-Logarithmic)  병합정렬, 퀵 정렬, 데이터가 10배가 되면 처리시간은 20배가 됨.**
+
+**O(n²) (quadratic)  이중루프. 데이터10배되면 처리시간은 최대 100배**
+
+**O(2ⁿ) (Exponential) 피보나치 수열**
